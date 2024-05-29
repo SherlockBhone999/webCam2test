@@ -28,8 +28,6 @@ export default function App(){
   
   const sendMessage = () => {
     socket.emit("sendMessage", newText, room )
-    const arr = [...messages, newText]
-    setMessages(arr)
     setNewText("")
     
   }
